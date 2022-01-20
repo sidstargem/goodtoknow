@@ -6,7 +6,7 @@
 	color:red; 
 	font-size:35px;
 	background-color:yellow;
-	width:70%;
+	
 	padding-left:25px;
 	padding-top:15px;
 	padding-bottom:15px;
@@ -14,12 +14,12 @@
 	}
 	p{
 	border: solid 2px red;
-	width:60%;
+	
 	padding:1% 2% 1% 2%;  
 	margin: 2%;
 
 	 }
-	body{width:100%;margin: 0 10% 0 10%; 
+	body{width:100%; 
 	 }
 	h1{ font-family: san serif;
 	text-decoration:strikethrough;
