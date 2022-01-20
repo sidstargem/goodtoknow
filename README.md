@@ -5,13 +5,12 @@
 	h2{
 	color:red; 
 	font-size:35px;
-	background-color:yellow;
-	
+	background-color:yellow;	
 	padding-left:25px;
 	padding-top:15px;
-	padding-bottom:15px;
-	
+	padding-bottom:15px;	
 	}
+	div{width:100%;}
 	p{
 	border: solid 2px red;
 	
