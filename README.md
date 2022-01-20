@@ -32,7 +32,7 @@
 	<title> Good To Know </title>
             </head>
             <body>
-	<h1> Lorem Ipsum</h1>
+	<h1>Good To Know</h1>
                       <h2 style="text-decoration:underline; "> What is Lorem Ipsum? </h2>
 	<p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the <b>1500s</b>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the <b>1960s</b> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with <a href="http://www.google.com" target="blank">desktop</a> publishing software like Aldus PageMaker including versions of Lorem Ipsum.
