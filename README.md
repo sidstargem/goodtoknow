@@ -20,7 +20,8 @@
 	 }
 	body{width:100%; 
 	 }
-	h1>a{ font-family: san serif;
+	h1>a
+	{font-family: san serif;
 	text-decoration:strikethrough;
 	}
 	a{color:green;
