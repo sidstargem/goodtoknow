@@ -10,7 +10,7 @@
 	padding-top:15px;
 	padding-bottom:15px;	
 	}
-	.container-lg{width:100%;}
+	.container-lg{max-width:100%!important;}
 	p{
 	border: solid 2px red;
 	
