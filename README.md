@@ -10,7 +10,7 @@
 	padding-top:15px;
 	padding-bottom:15px;	
 	}
-	.container-lg>div{width:100%;}
+	.container-lg{width:100%;}
 	p{
 	border: solid 2px red;
 	
