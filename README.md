@@ -32,7 +32,7 @@
 	<title> Good To Know </title>
             </head>
             <body>
-		    <h1><a href="/Page1.html" >Good To Know</a></h1>
+		    <h1><a href="/Index.html" >Good To Know</a></h1>
 		    <div>
                       <h2 style="text-decoration:underline; "> What is Lorem Ipsum? </h2>
 	<p>
