@@ -13,11 +13,8 @@
 	.container-lg{max-width:100%!important;}
 	p{
 	border: solid 2px red;
-	
 	padding:1% 2% 1% 2%;  
-	margin: 2%;
-
-	 }
+	margin: 2%; }
 	body{width:100%; 
 	 }
 	h1>a
