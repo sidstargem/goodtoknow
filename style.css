@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: 0;
     line-height: 1.625;
 }
@@ -13,7 +13,7 @@ input{
     width: 18.8rem;
     border: none;
     padding: 5px 10px;margin:10px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 textarea{
     min-height:120px;
@@ -22,7 +22,7 @@ textarea{
     border: none;
     padding: 5px 10px;
     margin:10px;
-   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
+   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 button{box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);}
 .form-btn{ 
@@ -69,10 +69,10 @@ z-0{
     width:50%;
 }
 .w-2\/3 {
-    width: 66.66%
+    width: 66.66%;
 }
 .w-3\/4 {
-    width: 75%
+    width: 75%;
 }
 .mx-10 {
     margin-left: 10%;
@@ -258,9 +258,7 @@ align-self:flex-start;
 .md\:mb-24 {
     margin-bottom: 6rem;
 }
-.block {
-    display: block;
-}
+
 @media (min-width: 1024px) {
     .xl\:hidden {
         display: none;
@@ -273,7 +271,7 @@ align-self:flex-start;
     font-size:1rem;
 }
 .font-medium {
-    font-weight: 500
+    font-weight: 500;
 }
 .relative{
     position:relative;
@@ -282,28 +280,23 @@ align-self:flex-start;
     position:absolute;
 }
 .font-bold {
-    font-weight: 700
+    font-weight: 700;
 }
 .flex{
     display:flex;
 }
-
 .flex-col {
-    flex-direction: column
+    flex-direction: column;
 }
 .flex-row {
-    flex-direction: row
+    flex-direction: row;
 }
-
 .flex-row-reverse {
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
-
-
 .md\:flex-col {
-    flex-direction: column
+    flex-direction: column;
 }
-
 .items-start{
     align-items:flex-start;
 }
@@ -320,7 +313,6 @@ align-self:flex-start;
 .fixed{
     position:fixed;
 }
-
 .bg-grey {
     --bg-opacity: 1;
     background-color: #2a3338;
@@ -335,7 +327,6 @@ align-self:flex-start;
 .shadow-lg {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
-
 .rounded-lg {
     border-radius: 0.5rem;
 }
@@ -347,14 +338,8 @@ align-self:flex-start;
 .fill-current {
     fill: #2a3338;
 }
-.fill-menucolor{fill:#fff;}
-@media (min-width: 768px) {
-    .md\:flex {
-        display: flex;
-    }
-.md\:flex-row {
-    flex-direction: row;
-}	
+.fill-menucolor{
+	fill:#fff;
 }
 @media (min-width: 1024px) {  
 .xl\:flex-row {
@@ -431,7 +416,7 @@ align-self:flex-start;
     transition: width .3s ease;
 }
 .header-nav > ul > li > a.active:after, .header-nav > ul > li > a:focus:after, .header-nav > ul > li > a:hover:after {
-    width: 100%
+    width: 100%;
 }
 
 .header-nav > ul > li > a.telephone:after {
@@ -446,7 +431,7 @@ align-self:flex-start;
     position: absolute;
     right: 20px;
     top: 12px;
-    transform: rotate(45deg) translateY(50%)
+    transform: rotate(45deg) translateY(50%);
 }
 
 .site-header-nav-item:hover .subnav {
@@ -458,7 +443,7 @@ align-self:flex-start;
 .site-header-nav-item:focus-within .subnav {
     transform: translate(0) scale(1);
     opacity: 1;
-    transition: opacity .2s ease 0s,transform .1s ease 0s
+    transition: opacity .2s ease 0s,transform .1s ease 0s;
 }
 .subnav {
     transform: translate(80px,-60px) scale(0);
@@ -469,7 +454,7 @@ align-self:flex-start;
 .subnav a {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .subnav a:after {
@@ -479,7 +464,7 @@ align-self:flex-start;
     height: 12px;
     margin-left: 0;
     display: block;
-    transition: transform .3s ease
+    transition: transform .3s ease;
 }
 
 .subnav a:focus, .subnav a:hover {
@@ -488,11 +473,11 @@ align-self:flex-start;
     background-color: rgba(74,85,104,var(--bg-opacity));
     --text-opacity: 1;
     color: #fff;
-    color: rgba(255,255,255,var(--text-opacity))
+    color: rgba(255,255,255,var(--text-opacity));
 }
 
 .subnav a:focus:after, .subnav a:hover:after {
-    transform: translateX(5px)
+    transform: translateX(5px);
 }
 
 .sticky-header {
@@ -521,6 +506,9 @@ align-self:flex-start;
     text-transform: capitalize;
     transition: all .3s;
 }
+.block {
+    display: block;
+}
 .header-nav .btn{padding:0.55rem 0.75rem;display:block;margin-top:0;}
 .header-nav .btn svg{vertical-align:middle;}
 nav.header-mininav {display: none;}
@@ -547,9 +535,20 @@ align-self:flex-start;
 @media (min-width: 1240px) {   
 .flexend{align-self:flex-start;}
 }
+.px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
 .px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.pl-8 {
+    padding-left: 2rem;   
+}
+.-pr-8{
+   
+    padding-right: -2rem;
 }
 .pb-1\/4
 {
@@ -593,7 +592,7 @@ padding-top:2rem;
 .services img{
 width:100%;
 height:auto;
-max-height:190px;
+
 }
 .services p{
 max-height:100px;
@@ -603,15 +602,14 @@ font-size:0.9rem;
 line-height:1.3rem;
 }
 .services h3{
-color:	#696969;
+	color:#696969;
 }
 .services h4{
-text-transform: uppercase;
+    text-transform: uppercase;
     font-weight: 700;
-font-size:1.3rem;
- margin-top:0.5rem;
- margin-bottom:0.5rem;
-
+    font-size:1.3rem;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
 }
 .contactus{
     min-height: 500px;
@@ -696,4 +694,13 @@ font-size:1.3rem;
 .flex-inner li {
   width: 100px;
 }
+@media (min-width: 768px) {
+    .md\:flex{
+        display: flex;
+    }
+    .md\:flex-row {
+    	flex-direction: row;
+    }	
+}
+
 }
