@@ -1,9 +1,26 @@
-body {
+﻿body {
     margin: 0;
     line-height: 1.625;
 }
 header{
     display:block;
+}
+footer{
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    outline: none;
+}
+footer>section{
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+footer div.w-full div{
+    font-weight: 600;
+    text-transform: uppercase;
 }
 ul,ol{
     list-style:none;
@@ -14,6 +31,11 @@ input{
     border: none;
     padding: 5px 10px;margin:10px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+input[type="checkbox"]{
+    height: 1.2rem;
+    width: 1rem;
+visibility:hidden;   
 }
 textarea{
     min-height:120px;
@@ -90,6 +112,10 @@ z-0{
  margin-top:1rem;
  margin-bottom:1rem;
 }
+.my-8{
+ margin-top:2rem;
+ margin-bottom:2rem;
+}
 .pt-1\/4 {
     padding-top: 0.25rem;
 }
@@ -136,6 +162,9 @@ z-0{
 .mr-4{ margin-right:1rem;}
 .-mb-16 {
     margin-bottom: -4rem;
+}
+.-ml-32{
+  margin-left:-8rem;
 }
 .ml-28{
     margin-left:7rem;
@@ -388,9 +417,15 @@ align-self:flex-start;
 .mt-8 {
     margin-top: 2rem;
 }
+@media (min-width: 768px) {
+   img.pngimg{
+    	width:200px;
+   }
+}
 .logo .pngimg{
     width:250px;
 }
+
 .justify-between{
    justify-content:space-between;
 }
@@ -584,7 +619,7 @@ margin-bottom:0;
 padding-top:2rem;
 }
 .content h3{
-font-size:3rem;
+font-size:2rem;
 margin-top:0;
 margin-bottom:0;
 padding-top:2rem;
@@ -682,7 +717,7 @@ line-height:1.3rem;
 
 .flex-outer li button {
   margin-left: auto;
-  padding: 8px 16px;
+  padding: 12px 20px;
   border: none;
   background: #333;
   color: #f2f2f2;
@@ -701,6 +736,12 @@ line-height:1.3rem;
     .md\:flex-row {
     	flex-direction: row;
     }	
+}
+input[type="checkbox"]:checked ~ .header-mininav{
+ display:block;
+}
+input[type="checkbox"]:not(:checked) ~ .header-mininav{
+ display:none;
 }
 
 }
