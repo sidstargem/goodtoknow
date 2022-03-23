@@ -25,7 +25,7 @@ footer div.w-full div{
 ul,ol{
     list-style:none;
 }
-input{
+input,select{
     height: 2.2rem;
     width: 18.8rem;
     border: none;
@@ -96,6 +96,12 @@ a{text-decoration:inherit; color:inherit;}
 .w-full{
     width:100%;
 }
+@media (max-width: 768px) {
+   .md\:w-full{
+    width:100%;
+}
+}
+
 .md\:w-half{
     width:50%;
 }
@@ -113,6 +119,7 @@ a{text-decoration:inherit; color:inherit;}
 .mx-0{
     margin-left:0;margin-right:0;
 }
+.mx-4{margin-left:1rem;margin-right:1rem;}
 .mx-10x{
  margin-left: 10px;
     margin-right: 10px;
@@ -615,6 +622,9 @@ align-self:flex-start;
 }
 .pl-8 {
     padding-left: 2rem;   
+}
+.pr-8 {
+    padding-right: 2rem;   
 }
 .-pr-8{
    
