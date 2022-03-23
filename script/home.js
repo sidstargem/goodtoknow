@@ -10,26 +10,6 @@ $('#nav + button .close').click(function(){
     $('.close').hide();
   });
 
-$("#submit").on('click', function() {   
-    var phone = jQuery("#phone").val(); 
-    var name = jQuery("#first-name").val(); 
-    var mail = jQuery("#email").val();  
-    var message = jQuery("#message").val(); 
-    alert(phone); 
-    alert(name); 
-    alert(mail); 
-    alert(message); 
-
-    jQuery.post("https://thegoodtoknow.co.uk/sendmail.php",
-    {name: name, mail: mail , message: message}, 
-    function(data){
-        jQuery("#email").html("<div id='sent'><p>Thank you for the message.</p><p>We will reply as soon as possible.</p></div>");
-        alert('sent');
-    });      
-
-return false;       
-});  
-
 $('a[href*=\\#]').on('click', function() { 
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
@@ -43,4 +23,59 @@ $('a[href*=\\#]').on('click', function() {
             return false;
         }
     });
+
+
 });
+function sendMail(){
+var valid=false;
+var toemail="ani.or.suresh@gmail.com";
+var name=document.getElementById('first-name').value + " "+document.getElementById('last-name').value;
+var email = document.getElementById('email').value;
+var phone = document.getElementById('phone').value;
+var subject=document.getElementById('services').value;
+var message=document.getElementById('message').value;
+if(name.trim().length>0)
+{
+if(email.length>0){
+	if(subject.length>0)
+	{
+		if(message.length>0){
+		    valid=true;
+		}
+		else{
+			 $('html,body').animate({
+                scrollTop: document.getElementById('message').offset().top-150
+            }, 1000);
+	         }
+	}
+	else{
+ $('html,body').animate({
+                scrollTop: document.getElementById('subject').offset().top-150
+            }, 1000);
+	document.getElementById('subject').focus(); 
+     }	
+}
+else{
+ $('html,body').animate({
+                scrollTop: document.getElementById('email').offset().top-150
+            }, 1000);
+	document.getElementById('email').focus(); 
+}
+}
+else{
+ $('html,body').animate({
+                scrollTop: document.getElementById('first-name').offset().top-150
+            }, 1000);
+
+}
+if(valid){
+var bodymsg=document.getElementById('message').value+"\n\n Contact Name: "+name+"\n Contact Email: "+email+"\n Contact No: "+phone+"\n\n";
+
+    var link = "mailto:" +toemail           
+             + "?subject=" + encodeURIComponent("Enquiry about: ") + subject
+             + "&body=" + encodeURIComponent(bodymsg)
+    ;    
+    window.location.href = link;
+}
+
+}
